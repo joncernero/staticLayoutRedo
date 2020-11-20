@@ -1,3 +1,8 @@
+@font-face {
+    font-family: bluNewFont;
+    src: url(assets/BluuNext-Bold.otf);
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -102,6 +107,7 @@ h1{
 
 #readings{
     color: white;
+    font-family: bluNewFont;
     font-size: 3.5em;
     font-weight: 700;
     line-height: 1.3;
@@ -147,7 +153,8 @@ h1{
     position: relative;
     transform: rotate(45deg);
     animation: myMove 2s infinite;
-    margin: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
 }
 
 @keyframes myMove {
@@ -179,7 +186,8 @@ h1{
     flex-direction: row;
     width: 450px;
     height: auto;
-    margin-left:13%;
+    margin-left:12%;
+    margin-right: 15%;
     color: white;
 
 }
@@ -189,31 +197,100 @@ h1{
     padding: 2%;
 }
 
+
 h4{
     position: absolute;
-    margin-top:-8%;
-    margin-left: 1.5%;
+    margin-top:-6%;
+    margin-left: 3%;
     font-size: .75em;
 }
 h3{
     position: absolute;
-    margin-top: -6%;
+    margin-top: -4%;
+    margin-left: 3%;
     font-size: 2em;
+    font-family: bluNewFont;
 }
 
 #leftpic{
     width: 350px;
-    height: 250px;
+    height: 200px;
+    margin-left: 12px;
 
 }
 
 #centerpic{
     width: 350px;
-    height: 250px;
+    height: 200px;
     margin: 0 10px 0 10px;
 }
 
 #rightpic{
     width: 350px;
-    height: 250px;
+    height: 200px;
+    margin-left: 12px;
 }
+
+a {
+    color: inherit;
+}
+
+.bottomMenuSelectors{
+    display: flex;
+    flex-direction: row;
+    margin-top: -10%;
+    margin-right: 55%;
+}
+
+.circles{
+    width: 40px;
+    height: 5px;
+    border: solid .5px white;
+    border-radius: 100%;
+    padding: 11%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+}
+
+.circles p{
+    margin: -4px;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+  }
+  
+  .rightside {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .leftside {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+  h5{
+      color: white;
+      font-size: 25px;
+      margin-left: 5%;
+      margin-top: 6px;
+      letter-spacing: 10px;
+      opacity: 50%
+
+  }
+
+  #bottomBorder{
+      width: 750px;
+      height: auto;
+      border-bottom: solid 1px white;
+      margin-top: -50px;
+      margin-left: 275px;
+      opacity: 50%;
+  }
+ 
